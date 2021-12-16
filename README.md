@@ -10,5 +10,4 @@
     - codepen: https://codepen.io/ParkSudol/pen/YzrZVZP
         -> codepen은 github에서 json 파일을 불러오려다가 실패... 링크 부분이 안된다...
     
-    <img src="https://github.com/hyun5292/no-clone-coding/blob/main/tributepg/design/%EB%82%B4%EA%B0%80_%EB%A7%8C%EB%93%A0_%ED%99%94%EB%A9%B4.png?raw=true"  width="50%"/>
-    <img src="https://github.com/hyun5292/no-clone-coding/blob/main/tributepg/design/%EB%82%B4%EA%B0%80_%EB%A7%8C%EB%93%A0_%ED%99%94%EB%A9%B4_500.png?raw=true"  width="50%"/>
+    <img src="https://github.com/hyun5292/no-clone-coding/blob/main/tributepg/design/%EB%82%B4%EA%B0%80_%EB%A7%8C%EB%93%A0_%ED%99%94%EB%A9%B4.png?raw=true"  width="50%"/><img src="https://github.com/hyun5292/no-clone-coding/blob/main/tributepg/design/%EB%82%B4%EA%B0%80_%EB%A7%8C%EB%93%A0_%ED%99%94%EB%A9%B4_500.png?raw=true"  width="30%"/>
