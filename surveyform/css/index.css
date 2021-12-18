@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
 *,
 *::before,
@@ -29,123 +30,76 @@ body::before {
   background-position: center;
 }
 
-h1 {
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-p {
-  font-size: 1.125rem;
-}
-
-h1,
-p {
+h1, p {
   margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 0.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
+  line-height: 2.5;
 }
 
-input,
-button,
-select,
-textarea {
+input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
 
-button {
-  border: none;
-}
-
-.cont {
-  margin: 3.125rem auto 0 auto;
-  width: 100%;
-}
-
-.header {
-  margin-bottom: 1.875rem;
-  padding: 0 0.625rem;
+.wrap .header {
   text-align: center;
 }
 
-.description {
-  font-style: italic;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-span {
-  margin-left: 0.25rem;
-  font-size: 0.9rem;
-  color: #e4e4e4;
-}
-
-/* form */
-form {
-  padding: 2.5rem 0.625rem;
-  border-radius: 0.25rem;
+.wrap form {
+  margin-top: 1.75rem;
+  padding: 2.7rem 2.5rem 3rem;
+  border-radius: 2px;
   background: rgba(27, 27, 50, 0.8);
 }
 
-form .form-group {
-  margin: 0 auto 1.25rem auto;
-  padding: 0.25rem;
+.wrap form .form-group {
+  margin-bottom: 1.3rem;
 }
 
-form .form-control {
-  display: block;
+.wrap form .form-control {
   width: 100%;
-  height: 2.375rem;
-  padding: 0.375rem 0.75rem;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
-form .input-radio,
-form .input-checkbox {
+.wrap form .select-input,
+.wrap form .checkbox-input {
   display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
 }
 
-form .input-textarea {
-  padding: 0.625rem;
-  min-height: 120px;
-  width: 100%;
-  resize: vertical;
-}
-
-form .submit {
-  display: block;
-  padding: 0.75rem;
+.wrap form .submit-button {
+  padding: 1rem;
   width: 100%;
   color: inherit;
+  border: none;
   border-radius: 2px;
   background: #37af65;
-  cursor: pointer;
 }
 
-form .form-control:focus {
-  border-color: #80bdff;
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+/*
+//반응형 웹
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
 }
+
+@media (min-width: 576px) {
+   .wrap {
+     max-width: 540px;
+   }
+ }
+ 
+ @media (min-width: 768px) {
+   .wrap {
+     max-width: 720px;
+   }
+ }
+
+ */
