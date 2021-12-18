@@ -1,0 +1,100 @@
+//font
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+    font-family: 'Lato', sans-serif;
+    word-break: normal;
+    background: #eee;
+}
+
+.btn, button {
+    border: none;
+    text-transform: uppercase;
+    background: #f1c40f;
+}
+
+i {
+    color: darkorange;
+}
+
+.wrap {
+
+    .header {
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 40px;
+        top: 0;
+        height: 75px;
+        background: #eee;
+        .logo {
+            width: 60vw;
+            img {
+                max-width: 300px;
+            }
+        }
+
+        .nav {
+            width: 35vw;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                li {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .cont {
+        margin: 75px 0 0;
+        .search {
+            padding: 10px 0;
+            text-align: center;
+            h2 {
+
+            }
+
+            form {
+
+                #email {
+                    display: block;
+                    margin: 20px auto 15px;
+                    max-width: 300px;
+                    border: 1px solid rgb(113, 113, 113);
+                    border-radius: 2px;
+                }
+
+                #submit {
+                    padding: 5px 5px 5px 15px;
+                    font-size: 1rem;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .features {
+            margin-top: 100px;
+            .grid {
+                display: flex;
+                justify-self: space-around;
+                align-items: center;
+                margin: 70px 21vh;
+                .icon {
+                    width: 20vw;
+                    text-align: center;
+                }
+                .desc {
+                    width: 80vw;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 70%;
+        background: #ddd;
+    }
+}
