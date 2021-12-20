@@ -15,6 +15,11 @@ i {
   color: darkorange;
 }
 
+.wrap {
+  margin: 0 auto;
+  width: 75%;
+}
+
 .wrap .header {
   position: fixed;
   display: -webkit-box;
@@ -27,6 +32,7 @@ i {
           align-items: center;
   padding: 0 40px;
   top: 0;
+  left: 0;
   height: 75px;
   background: #eee;
 }
@@ -94,7 +100,7 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 70px 21vh;
+  margin: 70px auto;
 }
 
 .wrap .cont .features .grid .icon {
@@ -106,7 +112,81 @@ i {
   width: 80vw;
 }
 
+.wrap .cont .youtube {
+  text-align: center;
+}
+
+.wrap .cont .youtube iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+.wrap .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.wrap .pricing #pric-section {
+  margin: 0 10px;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.wrap .pricing #pric-section .level {
+  padding: 15px 0;
+  font-weight: 550;
+  text-transform: uppercase;
+  background-color: #ddd;
+}
+
+.wrap .pricing #pric-section h2 {
+  padding: 15px 0;
+}
+
+.wrap .pricing #pric-section ol li {
+  font-size: 1.025rem;
+  line-height: 1.8;
+}
+
+.wrap .pricing #pric-section .select-button {
+  margin: 30px 0 15px;
+  padding: 10px 20px;
+  font-size: inherit;
+  border-radius: 2px;
+}
+
 .wrap .footer {
-  width: 70%;
+  margin: 35px auto 0px;
+  padding: 20px 30px;
+  text-align: right;
   background: #ddd;
+}
+
+.wrap .footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.wrap .footer ul li {
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.wrap .footer span {
+  font-size: 0.9rem;
+  color: #444;
 }

@@ -18,7 +18,8 @@ i {
 }
 
 .wrap {
-
+    margin: 0 auto;
+    width: 75%;
     .header {
         position: fixed;
         display: flex;
@@ -26,6 +27,7 @@ i {
         align-items: center;
         padding: 0 40px;
         top: 0;
+        left: 0;
         height: 75px;
         background: #eee;
         .logo {
@@ -53,12 +55,7 @@ i {
         .search {
             padding: 10px 0;
             text-align: center;
-            h2 {
-
-            }
-
             form {
-
                 #email {
                     display: block;
                     margin: 20px auto 15px;
@@ -81,7 +78,7 @@ i {
                 display: flex;
                 justify-self: space-around;
                 align-items: center;
-                margin: 70px 21vh;
+                margin: 70px auto;
                 .icon {
                     width: 20vw;
                     text-align: center;
@@ -91,10 +88,69 @@ i {
                 }
             }
         }
+
+        .youtube {
+            text-align: center;
+            iframe {
+                max-width: 560px;
+                width: 100%;
+            }
+        }
+    }
+
+    .pricing {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 70px;
+        text-align: center;
+        #pric-section {
+            margin: 0 10px;
+            width: 100%;
+            border: 1px solid #000;
+            border-radius: 4px;
+            .level {
+                padding: 15px 0;
+                font-weight: 550;
+                text-transform: uppercase;
+                background-color: #ddd;
+            }
+            h2 {
+                padding: 15px 0;
+            }
+            ol {
+                li {
+                    font-size: 1.025rem;
+                    line-height: 1.8;
+                }
+            }
+
+            .select-button {
+                margin: 30px 0 15px;
+                padding: 10px 20px;
+                font-size: inherit;
+                border-radius: 2px;
+            }
+        }
     }
 
     .footer {
-        width: 70%;
+        margin: 35px auto 0px;
+        padding: 20px 30px;
+        text-align: right;
         background: #ddd;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            li {
+                padding: 0 10px;
+                font-weight: 500;
+            }
+        }
+        span {
+            font-size: 0.9rem;
+            color: #444;
+        }
     }
 }
