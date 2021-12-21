@@ -192,10 +192,38 @@ i {
   body {
     min-width: 450px;
   }
-  .features .grid .icon {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: -50px;
+    min-width: 450px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid red;
+  }
+  .header .logo {
+    min-width: 450px;
+  }
+  .header .nav {
+    margin-right: 0px;
+    width: 100%;
+    border: 1px solid yellow;
+  }
+  .header .nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cont .features .grid .icon {
     min-width: 70px;
   }
-  .features .grid .desc {
+  .cont .features .grid .desc {
     min-width: 250px;
   }
   .cont .pricing {
