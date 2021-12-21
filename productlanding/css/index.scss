@@ -1,25 +1,32 @@
 //font
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+//body
 body {
     font-family: 'Lato', sans-serif;
+    font-size: 1rem;
     word-break: normal;
     background: #eee;
 }
 
+//버튼 공통 설정
 .btn, button {
     border: none;
+    font-size: inherit;
     text-transform: uppercase;
     background: #f1c40f;
 }
 
+//i
 i {
     color: darkorange;
 }
 
+//.wrap
 .wrap {
     margin: 0 auto;
     width: 75%;
+    //header start
     .header {
         position: fixed;
         display: flex;
@@ -30,65 +37,77 @@ i {
         left: 0;
         height: 75px;
         background: #eee;
+        //header logo
         .logo {
             width: 60vw;
+            //header logo img
             img {
                 max-width: 300px;
             }
         }
 
+        //header nav
         .nav {
+            margin-right: 10px;
             width: 35vw;
+            //header nav ul
             ul {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                li {
-                    font-size: 1rem;
-                }
             }
         }
     }
+    //header end
 
+    //.cont start
     .cont {
-        margin: 75px 0 0;
+        margin-top: 75px;
+        //search start
         .search {
             padding: 10px 0;
             text-align: center;
+            //search form
             form {
+                //search form email
                 #email {
                     display: block;
                     margin: 20px auto 15px;
                     max-width: 300px;
+                    font-size: inherit;
                     border: 1px solid rgb(113, 113, 113);
                     border-radius: 2px;
                 }
-
+                //search form submit
                 #submit {
                     padding: 5px 5px 5px 15px;
-                    font-size: 1rem;
                     font-weight: 900;
                 }
             }
         }
+        //search end
 
+        //features start
         .features {
             margin-top: 100px;
+            //features grid
             .grid {
                 display: flex;
                 justify-self: space-around;
                 align-items: center;
                 margin: 70px auto;
+                //features grid icon
                 .icon {
                     width: 20vw;
-                    text-align: center;
                 }
+                //features grid desc
                 .desc {
                     width: 80vw;
                 }
             }
         }
-
+        //features end
+        //youtube start
         .youtube {
             text-align: center;
             iframe {
@@ -96,61 +115,111 @@ i {
                 width: 100%;
             }
         }
-    }
-
-    .pricing {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 70px;
-        text-align: center;
-        #pric-section {
-            margin: 0 10px;
-            width: 100%;
-            border: 1px solid #000;
-            border-radius: 4px;
-            .level {
-                padding: 15px 0;
-                font-weight: 550;
-                text-transform: uppercase;
-                background-color: #ddd;
-            }
-            h2 {
-                padding: 15px 0;
-            }
-            ol {
-                li {
-                    font-size: 1.025rem;
-                    line-height: 1.8;
+        //youtube end
+        //pricing start
+        .pricing {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+            text-align: center;
+            //pricing section
+            #pric-section {
+                margin: 0 10px;
+                width: 100%;
+                border: 1px solid #000;
+                border-radius: 4px;
+                //pricing section level
+                .level {
+                    padding: 15px 0;
+                    font-weight: 550;
+                    text-transform: uppercase;
+                    background-color: #ddd;
+                }
+                //pricing section h2
+                h2 {
+                    padding: 15px 0;
+                }
+                //pricing section ol
+                ol {
+                    //pricing section ol li
+                    li {
+                        font-size: inherit;
+                        line-height: 1.8;
+                    }
+                }
+                //pricing section select-button
+                .select-button {
+                    margin: 30px 0 15px;
+                    padding: 10px 20px;
+                    border-radius: 2px;
                 }
             }
-
-            .select-button {
-                margin: 30px 0 15px;
-                padding: 10px 20px;
-                font-size: inherit;
-                border-radius: 2px;
-            }
         }
+        //pricing end
     }
+    //cont end
 
+    //footer start
     .footer {
         margin: 35px auto 0px;
         padding: 20px 30px;
         text-align: right;
         background: #ddd;
-
+        //footer ul
         ul {
             display: flex;
             flex-direction: row;
             justify-content: right;
+            //footer ul li
             li {
                 padding: 0 10px;
                 font-weight: 500;
             }
         }
+        //footer span
         span {
             font-size: 0.9rem;
             color: #444;
         }
+    }
+    //footer end
+}
+
+
+//반응형
+//768px 미만
+@media (max-width:767px) {
+    body {
+        min-width: 450px;
+    }
+
+    .features {
+        .grid {
+            .icon {
+                min-width: 70px;
+            }
+            .desc {
+                min-width: 250px;
+            }
+        }
+    }
+
+    .cont .pricing {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        border: 3px solid red;
+        #pric-section {
+            margin: 0 0 40px;
+        }
+    }
+}
+
+//768 - 1024px - 현재 상태
+
+//1024px 이상
+@media (min-width:1024px) {
+    body {
+        font-size: 1.2rem;
     }
 }
