@@ -37,6 +37,8 @@ i {
   left: 0;
   height: 75px;
   background: #eee;
+  -webkit-box-shadow: 0 4px 6px -5px #777;
+          box-shadow: 0 4px 6px -5px #777;
 }
 
 .wrap .header .logo {
@@ -48,7 +50,6 @@ i {
 }
 
 .wrap .header .nav {
-  margin-right: 10px;
   width: 35vw;
 }
 
@@ -60,12 +61,13 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .wrap .cont {
-  margin-top: 75px;
+  margin-top: 100px;
 }
 
 .wrap .cont .search {
@@ -130,7 +132,8 @@ i {
 }
 
 .wrap .cont .pricing #pric-section {
-  margin: 0 10px;
+  margin-right: 10px;
+  min-width: 190px;
   width: 100%;
   border: 1px solid #000;
   border-radius: 4px;
@@ -156,6 +159,10 @@ i {
   margin: 30px 0 15px;
   padding: 10px 20px;
   border-radius: 2px;
+}
+
+.wrap .cont .pricing #pric-section:last-child {
+  margin-right: 0px;
 }
 
 .wrap .footer {
@@ -201,15 +208,12 @@ i {
     min-width: 450px;
     width: 100%;
     text-align: center;
-    border: 1px solid red;
   }
   .header .logo {
     min-width: 450px;
   }
   .header .nav {
-    margin-right: 0px;
-    width: 100%;
-    border: 1px solid yellow;
+    min-width: 400px;
   }
   .header .nav ul {
     -webkit-box-orient: vertical;
@@ -233,10 +237,12 @@ i {
             flex-direction: column;
     width: 80%;
     margin: 0 auto;
-    border: 3px solid red;
   }
   .cont .pricing #pric-section {
-    margin: 0 0 40px;
+    margin-bottom: 40px;
+  }
+  .cont .pricing #pric-section:last-child {
+    margin-bottom: 0px;
   }
 }
 
